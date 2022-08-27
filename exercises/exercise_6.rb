@@ -10,4 +10,7 @@ puts "----------"
 
 # Your code goes here ...
 @store1.employees.create([{first_name: "Khurram", last_name: "Virani", hourly_rate: 60},{first_name: "Paolo", last_name: "Fernandez", hourly_rate: 60}])
-@store2.employees.create([{first_name: "Jane", last_name: "Doe", hourly_rate: 55},{first_name: "JC", last_name: "Fernandez", hourly_rate: 55}])
+emplyee = @store2.employees.create([{first_name: "Jane", last_name: "Doe", hourly_rate: 100},{first_name: "JC", last_name: "Fernandez", hourly_rate: 20}])
+
+puts  emplyee[1].valid?
+puts emplyee[1].errors.messages
